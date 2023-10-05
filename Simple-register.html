@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title> HTML Forms | Registration </title>
+    </head>
+        <body>
+            <!--
+                Form >> form container >> paired
+                  + action
+                  + method
+                 > input - different input widgets - singl
+                  + type
+                  > select>option - a list of options - paired
+                  > textarea -  huge text input - paired
+                  > button - an actionable button - paired
+                  > label - title -> input - paired
+            -->
+
+<!--
+                    HW6: group input / selects - fildsets
+                    - first section : personal data
+                    - second section: course selection
+                    <HW 7: move the form in the table 
+                -->
+            <form action="confirmed.html" method="get">
+                <h1> Create an account</h1>
+                
+                <fieldset>
+                     <legend> Personal data </legend>
+                  
+                    <table >
+                     <tr>
+                       <td><label for="fname" >First name</label></td>
+                       <td> <input type="text" name="fname" id="fname" placeholder="first name" required/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lname">Last name:</label> </td>
+                        <td><input type="text" name="lname" id="lname" placeholder="last name" required/></td> 
+                     
+                    </tr>
+                    <tr>
+                        <td> <label for="date">Birth day</label></td>
+                        <td> <input type="date" name="date" id="date" required></td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td> <label for="male">Male</label>
+                        <input type="radio" name="gender" id="male">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="female"></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="email">Email:</label></td>
+                        <td> <input type="email" name="email" id="email" placeholder="username@mail.com" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Phone">Phone number:</label> </td>
+                        <td> <input type="tel" name="Phone" id="Phone" placeholder="+37379123456" required></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="information">Additional information</label></td>
+                        <td> <textarea placeholder="Optional"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password"> Create a password</label></td>
+                        <td> <input type="password" name="password" id="password" minlength="6" maxlength="12" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Confirm"> Confirm password</label></td>
+                        <td> <input type="password" name="Confirm" id="Confirm" maxlength="12" required ></td>
+                    </tr> 
+                </table></fieldset>
+                <fieldset>
+                    <legend>Course selection</legend>
+                    <table>
+                    <tr>
+                        <td>Choose the training program:  </td>
+                        <td> <select>
+                              <option> HTML Basics Course </option>
+                              <option> CSS Basics Course </option>
+                            </select>
+                        </td>
+                    </tr>
+                
+                 
+               
+                <tr>
+                    <td> Choose the study hours:</td>
+                    <td> <select>
+                        
+                        <optgroup label="Morning"></optgroup>
+                           <option> 09:00</option>
+                           <option> 10:00</option>
+                        <optgroup label="Evening"></optgroup>
+                           <option> 19:00</option>
+                           <option> 20:00</option>
+                         </select>
+                    </td>
+                </tr>
+                </table></fieldset>
+           
+                       
+                <hr>
+                
+                I accept the <a href="terms.html" target="_blank">terms</a>  and conditions
+                <input type="checkbox" name="terms" required>
+                <br>
+                <br>
+                <button type="reset">Reset</button>
+                <button type="submit"> APPLY</button>
+
+            </form>
+        </body>
+   
+</html>
